@@ -1,7 +1,43 @@
-p{
-    width: 50px;
-    margin: 20;
-    color:blue;
-    float: left;
+/*Inicio - Formatação do Layout Um*/
 
+#geral{
+    width: 990px;
+    margin: 10px auto;
+}
+
+#topo{
+    width: 100%;
+    height: 80px;
+    background: red;
+}
+
+#principal{
+    width: 700px;
+    padding: 10px;
+    float: left;
+    background: green;
+}
+
+#principal p{
+    font: 20px verdana;
+    color: white;
+}
+
+#apoio{
+    width: 270px;
+    float: left;
+    background: blue;
+}
+
+#apoio img{
+    padding: 10px;
+    width: 250px;
+    height: 170px;
+}
+
+#rodape{
+    width: 100%;
+    clear: both;
+    background: yellow;
+    height: 30px;
 }
