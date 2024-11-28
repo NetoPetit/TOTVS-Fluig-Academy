@@ -1,0 +1,3 @@
+BPM(Business Process Management) é uma metodologia de mercado.
+
+BPMN(Business Process Model and Notation) é uma notação gráfica para desenhar um processo, um fluxo de atividades.
