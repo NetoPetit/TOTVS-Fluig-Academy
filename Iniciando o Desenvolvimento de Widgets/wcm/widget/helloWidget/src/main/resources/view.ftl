@@ -10,6 +10,15 @@
 				<button type="button" class="btn btn-success" data-chamarEvento2>Botão 2</button>			
 				<button type="button" class="btn btn-info" data-chamarEvento3>Botão 3</button>
 				
+				<hr />
+				
+				<div class="row">
+					<div class="form-group">
+				        <label for="exampleInputEmail1">Email address</label>
+				        <input type="email" class="form-control" id="exampleInputEmail1_${instanceId}" placeholder="Enter email">
+				    </div>
+				    <button type="button" class="btn btn-info" data-chamarEvento4>Botão 4</button>
+				</div>
    	 		</div>
 	</div>
 </div>
