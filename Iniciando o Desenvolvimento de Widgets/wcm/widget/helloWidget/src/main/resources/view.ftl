@@ -19,6 +19,11 @@
 				    </div>
 				    <button type="button" class="btn btn-info" data-chamarEvento4>Botão 4</button>
 				</div>
+				
+				<hr />
+				
+				<p>Olá ${pageRender.getUser().fullName}</p>
+				
    	 		</div>
 	</div>
 </div>
