@@ -1,5 +1,5 @@
 <div id="MyWidget_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide" data-params="MyWidget.instance()">
-	<h2>Estou no arquivo view.ftl</h2>
+	<h2>${i18n.getTranslation("view.titulo")}</h2>
 	<div class="panel panel-primary">
    			<div class="panel-heading">
         		<h3 class="panel-title">Hello Widget</h3>

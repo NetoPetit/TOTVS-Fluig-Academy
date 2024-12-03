@@ -1,7 +1,7 @@
 application.type=widget
-application.code=helloWidget
-application.title=Hello Widget
-application.description=Primeira Widget
+application.code=calculadoraNeto
+application.title=Calculadora
+application.description=desafio calculadora
 application.fluig.version=null
 application.category=Treinamento
 application.renderer=freemarker
@@ -13,10 +13,7 @@ application.mobileapp=true
 application.version=${build.version}-${build.revision}
 view.file=view.ftl
 edit.file=edit.ftl
-locale.file.base.name=helloWidget
-application.resource.js.1=/resources/js/helloWidget.js
-application.resource.css.2=/resources/css/helloWidget.css
-application.resource.js.3=/resources/js/jsCustom.js
+locale.file.base.name=calculadoraNeto
+application.resource.js.1=/resources/js/calculadoraNeto.js
+application.resource.css.2=/resources/css/calculadoraNeto.css
 hash=4a16315e9e66fa7d797b3f6b1fb365b69f9a4ce2
-application.icon=fire.png
-
