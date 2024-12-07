@@ -29,8 +29,18 @@
 		        <div class="card">
 		            <img class="card-img-top" src={{icone}} alt="Card image cap">
 		            <div class="card-body">
-		                <h3 class="card-title">{{nome}}</h3>
+		                <h3 class="card-title text-{{corCategoria}}">{{nome}}</h3>
 		                <p class="card-text">{{descricao}}</p>
+		                
+		                {{#desconto}}
+		                	<p class="card-text"><s>{{preco}}</s></p>
+		                	<span class="label label-success">Por {{novopreco}}</span>
+		                {{/desconto}}
+		                
+		                {{^desconto}}
+		                	<p class="card-text">{{preco}}</p>
+		                {{/desconto}}
+		                
 		                <a href="#" class="btn btn-primary">Ver mais</a>
 		                <p class="card-text">Avaliações</p>
 		                {{#avaliacao}}

@@ -15,7 +15,7 @@ var MyWidget = SuperWidget.extend({
     bindings: {
         
     	local: {
-            'execute': ['click_executeAction']
+           
         },
         global: {
         	
@@ -64,18 +64,33 @@ var MyWidget = SuperWidget.extend({
 				           		              	{"autor": "Cliente 2", "conteudo": "Descricao da avaliacao 2"},
 				           		              	{"autor": "Cliente 3", "conteudo": "Descricao da avaliacao 3"},
 				           		              	{"autor": "Cliente 4", "conteudo": "Descricao da avaliacao 4"}
-				           		              ]
+				           		              ],
+				           	"categoria": "laptop",
+				           	"corCategoria": ""
 				           	},
 				           	{
 				           		"nome": "Produto B",
 				           		"descricao": "aqui vai a descricao do produto B",
 				           		"preco": "R$ 150,00",
 				           		"icone": "/aprendendoMustache/resources/images/clientimg.png",
-				           		"avaliacao": [ ]
+				           		"avaliacao": [ ],
+				           		"desconto": true,
+				           		"novopreco": "R$ 130,00",
+				           		"categoria": "celular",
+				           		"corCategoria": ""
 				           	}
 				           ]
-		
 		}
+		
+		$(view.produtos).each(function(index, produto){
+			if(produto.categoria == "laptop"){
+				produto.corCategoria = "info";
+			}else if (produto.categoria == "celular"){
+				produto.corCategoria = "danger";
+			}else {
+				produto.corCategoria = "primary";
+			}
+		});
 		
 		var template = document.getElementById("produtosTemplate").innerHTML;
     	const output = Mustache.render(template , view);
