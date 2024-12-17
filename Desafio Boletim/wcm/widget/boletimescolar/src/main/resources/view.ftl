@@ -1,4 +1,7 @@
-<div id="MyWidget_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide" data-params="MyWidget.instance()">
+<#assign parametros = "{'prop1' : ' valor 1' , 'modo' : 'estou na view' , 'mediaInferior' : '${mediaInferior ! ''}' , 'mediaSuperior' : '${mediaSuperior ! ''}'}">
+
+
+<div id="MyWidget_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide" data-params="MyWidget.instance(${parametros})">
 	
 	<div class="row">
 		<div class="panel panel-primary">
@@ -44,9 +47,20 @@
 	    		</tr>
 	    	</table>
 	    	
-	    	<button type="button" class="btn btn-success">Success</button>
+	    	<button type="button" class="btn btn-success" data-verificarInferiorSuperior>Calcular média</button>
 	    	
-	    	
+	    	<table class="table>"
+	    		<tr>
+		    		<td>
+			    		<form role="form">
+				    		<div class="form-group">
+				        		<label for="media">Média</label>
+				        		<input type="text" class="form-control" id="media_${instanceId}" placeholder="Media" readonly>
+				    		</div>
+				    	</form>
+		    		</td>
+	    		</tr>
+	    	</table>
 	    	
 		</div>
 	</div>

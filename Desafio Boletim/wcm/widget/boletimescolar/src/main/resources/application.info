@@ -16,3 +16,4 @@ edit.file=edit.ftl
 locale.file.base.name=boletimescolar
 application.resource.js.1=/resources/js/boletimescolar.js
 application.resource.css.2=/resources/css/boletimescolar.css
+application.resource.component.1=fluigcolorpicker
