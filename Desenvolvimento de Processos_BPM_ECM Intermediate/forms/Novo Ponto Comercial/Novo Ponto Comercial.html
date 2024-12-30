@@ -11,12 +11,12 @@
 <form name="form" role="form">
 	<div class="panel panel-primary">
 			<div class="panel-heading">
-			    <h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md" aria-hidden="true"></i>Requisitante</h3>
+			    <h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md" aria-hidden="true"></i>i18n.translate("nome")</h3>
 			</div>
 		<div class="panel-body">
 			<div class="row">
 				<div class="form-group col-md-6">
-					<label for="nome">Nome</label>
+					<label for="nome">i18n.translate("nome")</label>
 					<input type="text" name="nome" class="form-control" id="nome">
 				</div>
 				<div class="form-group col-md-4">
@@ -46,29 +46,7 @@
 	    </div>
 	    <div class="panel-body">
 		    <div class="row">
-
-			    <div class="form-group col-md-6">
-			        <label for="responsavel">Responsável</label>
-			        <input type="zoom" class="form-control" id="responsavel" name="responsavel" zoomvalue="colleagueId" data-zoom="
-			            {
-			                'displayKey':'colleagueName',
-			                'datasetId':'colleague',
-			                'placeholder':'Escolha o usuário'
-			                'fields':[{
-			                    'field':'colleagueId',
-			                    'label':'colleagueId',
-			                    },{
-			                    'field':'colleagueName',
-			                    'label':'colleagueName',
-			                    'standard':true
-			                },{
-			                    'field':'login',
-			                    'label':'Login'
-			                }]
-			            }">
-			        <input type="hidden" class="form-control" id="hidden_user" name="hidden_user"> <!-- este campo irá armazenar o campo 'collegueId' -->
-			    </div>
-				<div class="form-group col-md-2">
+			    <div class="form-group col-md-2">
 					<label for="tipoPonto">Tipo do Ponto</label>
 					<div class="radio">
 						<label><input type="radio" name="tipoPonto" id="tipoPonto" value="quiosque">Quiosque</label>
@@ -122,6 +100,37 @@
 			</div>
 	    </div>
     </div>
+    <div class="panel panel-primary">
+	    <div class="panel-heading">
+	        <h3 class="panel-title"><i class="fluigicon fluigicon-users icon-md" aria-hidden="true"></i>Responsáveis</h3>
+	    </div>
+	    <div class="panel-body">
+	    	<table tablename="responsaveisTabela" class="table table-hover" addbuttonlabel="Adicionar Responsavel" addbuttonclass="btn btn-info">
+	    		<thead>
+	    			<tr>
+	    				<td>Responsáveis</td>
+	    			</tr>
+	    		</thead>
+	    		<tbody>
+		    		<tr>
+						<td>
+							<input type="zoom" class="form-control" id="responsavel" name="responsavel" data-zoom="
+					        {
+					            'displayKey':'colleagueName',
+					            'placeholder': 'Selecione o usuário',
+					            'datasetId':'colleague',
+					            'fields':[{
+					                'field':'colleagueName',
+					                'label':'colleagueName',
+					                'standard':true
+					            }]
+					        }">
+						</td>
+					</tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+	</div>    
     <div class="panel panel-primary">
 	    <div class="panel-heading">
 	        <h3 class="panel-title"><i class="fluigicon fluigicon-money icon-md" aria-hidden="true"></i>Financeiro</h3>
