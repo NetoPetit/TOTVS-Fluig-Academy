@@ -57,5 +57,7 @@ function validateForm(form){
 	if(msg != ""){
 		throw msg;
 	}
-	
+	if(form.getValue("pais") == "") {
+		msg += i18n.translate("validatePais");
+	}
 }
