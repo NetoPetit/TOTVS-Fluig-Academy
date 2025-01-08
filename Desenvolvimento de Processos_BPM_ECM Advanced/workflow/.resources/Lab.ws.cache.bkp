@@ -18,10 +18,10 @@
    </array>
   </void>
   <void method="put">
-   <string>camposFormulario, documentoId = 134</string>
+   <string>camposFormulario, documentoId = 121</string>
    <array class="java.lang.String" length="1">
     <void index="0">
-     <string>valorDesejado</string>
+     <string>renda</string>
     </void>
    </array>
   </void>
@@ -38,19 +38,6 @@
       </void>
       <void property="processId">
        <string>0</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
-      <void property="companyId">
-       <int>1</int>
-      </void>
-      <void property="processDescription">
-       <string>Solicitação de Manutenção</string>
-      </void>
-      <void property="processId">
-       <string>01</string>
       </void>
      </object>
     </void>
@@ -77,19 +64,6 @@
       </void>
       <void property="processId">
        <string>CadastroNovoPontoComercialNeto</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
-      <void property="companyId">
-       <int>1</int>
-      </void>
-      <void property="processDescription">
-       <string>Comprar Dolar</string>
-      </void>
-      <void property="processId">
-       <string>ComprarDolarNeto</string>
       </void>
      </object>
     </void>
@@ -259,19 +233,6 @@
       </void>
       <void property="processId">
        <string>PropostadeSeguroNeto</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
-      <void property="companyId">
-       <int>1</int>
-      </void>
-      <void property="processDescription">
-       <string>Meu primeiro processo.</string>
-      </void>
-      <void property="processId">
-       <string>TesteDeProcesso</string>
       </void>
      </object>
     </void>
@@ -596,6 +557,19 @@
     <void method="add">
      <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
       <void property="datasetName">
+       <string>testet</string>
+      </void>
+      <void property="documentDescription">
+       <string>testet</string>
+      </void>
+      <void property="documentId">
+       <int>60</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
        <string>primeiro_formulario</string>
       </void>
       <void property="documentDescription">
@@ -655,71 +629,6 @@
       </void>
       <void property="documentId">
        <int>121</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
-      <void property="datasetName">
-       <string>DSFormulariodePrimeiroProcesso</string>
-      </void>
-      <void property="documentDescription">
-       <string>Formulário de Primeiro Processo</string>
-      </void>
-      <void property="documentId">
-       <int>126</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
-      <void property="datasetName">
-       <string>DSFormulariodeSolicitacaodeManutencao</string>
-      </void>
-      <void property="documentDescription">
-       <string>Formulário de Solicitação de Manutenção</string>
-      </void>
-      <void property="documentId">
-       <int>130</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
-      <void property="datasetName">
-       <string>DSValorDolar</string>
-      </void>
-      <void property="documentDescription">
-       <string>Valor Dolar</string>
-      </void>
-      <void property="documentId">
-       <int>132</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
-      <void property="datasetName">
-       <string>DSValorDesejadodoDolar</string>
-      </void>
-      <void property="documentDescription">
-       <string>Valor Desejado do Dolar</string>
-      </void>
-      <void property="documentId">
-       <int>134</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
-      <void property="datasetName">
-       <string>DSFormulariodeMeuprimeiroprocesso.</string>
-      </void>
-      <void property="documentDescription">
-       <string>Formulário de Meu primeiro processo.</string>
-      </void>
-      <void property="documentId">
-       <int>135</int>
       </void>
      </object>
     </void>
