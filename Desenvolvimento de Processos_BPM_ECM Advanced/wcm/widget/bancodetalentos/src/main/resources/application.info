@@ -1,0 +1,6 @@
+application.version=${build.version}-${build.revision}
+view.file=view.ftl
+edit.file=edit.ftl
+locale.file.base.name=bancodetalentos
+application.resource.js.1=/resources/js/bancodetalentos.js
+application.resource.css.2=/resources/css/bancodetalentos.css
